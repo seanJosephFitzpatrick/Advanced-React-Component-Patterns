@@ -7,8 +7,8 @@ export default class Toggle extends React.Component {
   }
 
   toggle = () => {
-    this.setState({
-      on: !this.state.on
+    this.setState(currentState => {
+      return {on: !currentState.on}
     })
   }
 
